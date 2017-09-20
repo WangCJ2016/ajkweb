@@ -1,0 +1,102 @@
+@import "../../assets/common/common.scss";
+.fdsf{
+  display: flex;
+  transition: all 1s;
+  transform: rotate(350);
+}
+@media screen and (max-width:479px) {
+  .pcHeader{
+    .ajk_header_content{
+      height: 48px;
+      .logo{
+        float: left;
+        width: 119px;
+        height: 100%;
+        line-height: 48px;
+        display: inline-block;
+        text-align: left;
+        img{
+          width: 100%;
+          transform: scale(.7,.7);
+          vertical-align: middle;
+        }
+      }
+      .mediumNav{
+        line-height: 48px;
+        height: 48px;
+        float: right;
+        margin-right: 20px;
+        img{
+          transform: scale(.7,.7);
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:480px) {
+  .pcHeader{
+     width: 100%;
+     margin-bottom: 1px;
+    .ajk_header_content{
+      max-width: 1160px;
+      height: 66px;
+      margin: 0 auto;
+      .logo{
+        float: left;
+        width: 119px;
+        height: 100%;
+        line-height: 66px;
+        margin-left: 34px;
+        img{
+          vertical-align: middle;
+        }
+      }
+      .mediumNav{
+        float: right;
+        margin-right: 44px;
+        line-height: 66px;
+        img{
+          vertical-align: middle;
+        }
+      }
+      .ant-menu{
+        float: right;
+        line-height: 64px;
+        border: none;
+        z-index: 99;
+        >li{
+          font-size: 16px;
+        }
+      }
+    }
+
+  }
+}
+
+
+.ant-menu{
+  .ant-menu-item-selected,.ant-menu-item-active,.ant-menu-submenu-active,.ant-menu-submenu-selected{
+    border-bottom-width: 4px!important;
+  }
+}
+.ant-menu-item{
+  font-size: 15px;
+}
+.ant-dropdown{
+  width: 100%;
+  .ant-dropdown-menu-item > a, .ant-dropdown-menu-submenu-title > a{
+    text-align: center;
+  }
+
+  .ant-dropdown-menu {
+    box-shadow: none;
+  .ant-dropdown-menu-item{
+    text-align: center;
+    padding-left: 24px!important;
+  }
+}
+  .ant-dropdown-menu-submenu-title{
+    text-align: center;
+  }
+}

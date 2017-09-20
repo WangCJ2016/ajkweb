@@ -1,0 +1,139 @@
+@import "../../assets/common/common.scss";
+.footer_large{
+  height: 338px;
+  background-color: #555;
+  .ajk_footer_content{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 50px 0;
+    img{
+      width: 30%;
+      float: left;
+    }
+    figure{
+      width: 15%;
+      float: left;
+      padding:10px;
+      img{
+        width: 100%;
+      }
+      figcaption{
+        font-size: 14px;
+        line-height: 25px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+    .logo{
+      margin-top: 20px;
+    }
+    .diver{
+      float: left;
+      height:100px;
+      width: 1px;
+      background-color: #fff;
+      margin: 0 2%;
+    }
+    dl{
+      width: 15%;
+      float: left;
+      text-align: center;
+      a{
+        color: #fff;
+      }
+      &:last-child{
+        width: 25%
+      }
+      dt{
+        a{
+          color: #fff;
+        }
+        color: #fff;
+        line-height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      dd{
+        a{
+          color: #fff;
+        }
+        color: #fff;
+        line-height: 25px;
+        font-size: 14px;
+
+      }
+    }
+    .callus{
+      text-align: left;
+    }
+  }
+  .copy{
+    text-align: center;
+    color: #ccc;
+  }
+}
+.footer_medium {
+  padding: 0 35px;
+  background-color: #555;
+  ul{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7d7d7d;
+    li {
+      color: #fff;
+      font-size: 16px;
+      line-height: 36px;
+    }
+    li:first-child{
+      line-height: 80px;
+    }
+  }
+  .qr{
+    padding:30px;
+    padding-bottom: 0;
+    figure{
+      img{
+        width: 100%;
+      }
+      figcaption{
+        color: #fff;
+        font-size:14px;
+        text-align:center;
+        line-height: 60px;
+      }
+    }
+  }
+  >p{
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:479px) {
+  .footer_medium{
+    figure{
+      width:80%;
+      max-width: 200px;
+      margin: 0 auto;
+    }
+    li{
+      font-size: 12px;
+    }
+    .copy{
+      font-size: 12px;
+    }
+  }
+}
+@media screen and (min-width:480px) and (max-width:749px){
+  .footer_medium{
+    figure + figure{
+      margin-left: 30px;
+    }
+    figure{
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(33.333333% - 20px);
+      display: inline-block;
+    }
+  }
+}

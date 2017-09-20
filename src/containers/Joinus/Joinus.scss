@@ -1,0 +1,380 @@
+@import "../../assets/common/common.scss";
+.join_topimg{
+  width: 100%;
+  height: 310px;
+  background: url('../../assets/imgs/jm_bg.png')no-repeat center center;
+  h5{
+    font-size: 40px;
+    color: #fff;
+    font-weight:300;
+    text-align: center;
+    line-height: 310px;
+  }
+}
+@media screen and (max-width:749px) {
+  .join_topimg{
+    height: 250px;
+    h5{
+      font-size: 26px;
+      line-height: 250px;
+  }
+}
+}
+.join_advantage{
+  padding: 40px 0;
+  .items{
+    margin: 0 auto;
+    max-width: 900px;
+    figure{
+      text-align: center;
+      height: 150px;
+      display: inline-block;
+      float: left;
+      width: 25%;
+      .img{
+        line-height: 100px;
+        img{
+          vertical-align: middle;
+        }
+      }
+      figcaption{
+        line-height: 50px;
+        color: #333;
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .join_advantage{
+    .items{
+      figure{
+        img{
+          width: 30px;
+        }
+        figcaption{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:750px) {
+  .join_reform{
+    .items{
+      max-width: 1160px;
+      margin: 40px auto 0;
+      .item + .item{
+        margin-left: 15px;
+      }
+      .item{
+        float: left;
+        width:calc(33.3333% - 10px)
+      }
+    }
+  }
+}
+@media screen and (min-width:480px) and (max-width:749px) {
+  .join_reform{
+    .items{
+      padding:0 60px;
+      .item+.item{
+        margin-top: 20px;
+      }
+      .item{
+        width:380px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .join_reform{
+    .items{
+      padding:0 ;
+      .item+.item{
+        margin-top: 20px;
+      }
+      .item{
+        width:100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.join_reform{
+  background-color: $ajk_backgroundColor;
+  padding: 40px 0;
+  .items{
+    .item{
+      text-align: center;
+      .img{
+        img{
+          width: 100%;
+        }
+      }
+      h5{
+        font-size: 18px;
+        text-align: center;
+        color: #333;
+        font-weight: 400;
+        line-height: 40px;
+      }
+      p{
+        max-width: 300px;
+        color: #666;
+        font-size: 14px;
+        color: #666;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width:749px) and (min-width:479px) {
+  .join_reform{
+    h5{
+      font-size: 16px!important;
+    }
+    p{
+      font-size: 12px!important;
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .join_reform{
+    padding: 0;
+  }
+}
+@media screen and (min-width:750px) {
+  .join_spread{
+    .content{
+      max-width: 1000px;
+      margin: 30px auto 0;
+      .left{
+        float: left;
+        width: 48%;
+        max-width: 400px;
+        padding: 40px 0 40px 40px;
+      }
+      .right{
+        float: right;
+          width: 48%;
+        display: inline-block;
+        max-width: 371px;
+      }
+    }
+  }
+}
+@media screen and (max-width:749px) {
+  .join_spread{
+    .content{
+      .left,.right{
+        margin:0 auto;
+        max-width: 371px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.join_spread{
+  padding: 40px 0;
+  border-bottom: 1px dashed #d8d8d8;
+  .content{
+    .left{
+      h5{
+        font-size: 22px;
+        line-height: 122px;
+        color: #333;
+      }
+      p{
+        font-size: 16px;
+        color: #555;
+      }
+      img{width: 100%}
+    }
+    .right{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width:750px) {
+  .join_cehua{
+    padding: 40px 0;
+    .items{
+      max-width: 1160px;
+      padding: 0 20px;
+      margin: 0 auto;
+      figure{
+        width: calc(25% - 19.5px);
+      }
+      figure + figure{
+        margin-left: 26px;
+      }
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .join_cehua{
+    padding: 10px;
+    .items{
+      figure{
+        width: 100%;
+        min-width: 300px;
+        margin:0 auto;
+      }
+
+    }
+  }
+}
+@media screen and (min-width:480px) and (max-width:749px){
+  .join_cehua{
+    padding:30px;
+    .items{
+      figure{
+        width: calc(50% - 15px);
+        &:nth-child(2n+2){
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+.join_cehua{
+  text-align: center;
+  >p{
+    line-height: 24px;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+    span{
+      font-size: 22px;
+      color: #333;
+      vertical-align: middle;
+    }
+  }
+
+  figure{
+    display: inline-block;
+    img{
+      width: 100%;
+    }
+    figcaption{
+      line-height: 56px;
+      color: #666;
+    }
+  }
+
+}
+
+.join_control{
+  background-color: $ajk_backgroundColor;
+  padding: 40px 20px;
+  .content{
+    .left{
+      .item{
+        .img{
+          img{
+            width: 100%;
+          }
+        }
+      >div{
+        display: inline-block;
+
+        h5{
+          font-size: 16px;
+          line-height: 33px;
+          color: #333;
+        }
+        p{
+          line-height: 20px;
+          font-size: 13px;
+          color: #555;
+        }
+      }
+    }
+    }
+    .right{
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width:750px) {
+  .join_control{
+    .content{
+      max-width: 1000px;
+      margin: 40px auto;
+      .left{
+        width: 48%;
+        float: left;
+        .item+.item{
+          margin-top: 15px;
+        }
+        .img{
+          width: 66px;
+          height: 66px;
+          float: left;
+        }
+      }
+      .right{
+        width: 48%;
+        float: right;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:749px) and (min-width:480px) {
+  .join_control{
+    .content{
+      width: 86.666%;
+      margin:0 auto;
+      text-align: center;
+      .right img{
+        width: 80%;
+      }
+      .left{
+        text-align: left;
+        .item{
+          display: inline-block;
+          width: 50%;
+          .img{
+            width: 24%;
+
+          }
+          >div:last-child{
+            width: 68%;
+            padding-left: 8%;
+
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .join_control{
+    .content{
+      padding: 20px;
+      .left{
+        width: 100%;
+        margin: 0 auto;
+        .item{
+          >div{
+            float: left;
+            &:last-child{
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

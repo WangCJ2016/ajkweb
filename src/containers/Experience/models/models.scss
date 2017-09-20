@@ -1,0 +1,161 @@
+@import "../../../assets/common/common.scss";
+
+.experience_sleep{
+  padding: 50px 0;
+  background-color: $ajk_backgroundColor;
+  .sleep_wrap{
+    max-width: 1020px;
+    position: relative;
+      margin: 0 auto;
+  }
+  .content{
+    width: 100%;
+    position: relative;
+    display: none;
+  }
+
+
+  .show{
+    display: block;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .experience_sleep{
+    .left{
+      width: 70%;
+      margin-right: 5.08%;
+      display: inline-block;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+    .right{
+      width: 24.7%;
+      display: inline-block;
+      h5{
+        font-size: 24px;
+        color: #333;
+        font-weight: normal;
+        margin-top: 10px ;
+      }
+      .diver{
+        width: 50px;
+        height: 4px;
+        margin: 10px 0;
+        background-color: $ajk_color;
+      }
+      ul li{
+        line-height: 20px;
+        font-size: 14px;
+      }
+    }
+    .selects{
+      width: 350px;
+      height: 250px;
+      right: 0;
+      top:0;
+      position: absolute;
+      background: url('../../../assets/imgs/right_shizi.png')no-repeat top right;
+      .items{
+        width: 217px;
+        height: 189px;
+        right: -16px;
+        top:-47px;
+        margin: 40px auto;
+        background: url('../../../assets/imgs/tianzige.png')no-repeat center center;
+        >p{
+          display: inline-block;
+          width: 67px;
+          line-height: 67px;
+          text-align: center;
+          &:nth-child(3n+1){
+            margin-left: 6px;
+          }
+          img{
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:999px)  {
+  .experience_sleep{
+    .selects{
+      position: absolute;
+      bottom:0;
+      left: 10%;
+      width: 198px;
+      height: 190px;
+      background: url('../../../assets/imgs/tianzige.png')no-repeat center center;
+      p{
+        width: 63px;
+        height: 63px;
+        line-height: 63px;
+        display: inline-block;
+        text-align: center;
+        img{
+          vertical-align: middle;
+          width: 50%;
+        }
+      }
+    }
+    .left{
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+      img{
+        width: 100%;
+        max-height: 400px;
+      }
+    }
+    .right{
+      margin-left: 55%;
+      height: 190px;
+      h5{
+        font-size: 24px;
+        color: #333;
+        font-weight: normal;
+        margin-top: 10px ;
+      }
+      ul li{
+        line-height: 30px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .experience_sleep{
+    .left{
+      width: 100%;
+      max-width: 100%;
+    }
+    .selects{
+      width: 90%;
+      height:50px;
+      text-align: justify;
+      text-align-last: justify;
+      left: 5%;
+      top:50%;
+      .items>p{
+        width: 37px;
+        height: 37px;
+        line-height: 37px;
+        display: inline-block;
+        img{
+          width: 80%;
+
+        }
+      }
+    }
+    .content{
+      .right{
+        margin-left: 5%;
+        margin-top: 50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+$ajk_color: #ec6d1b;
+$ajk_backgroundColor:#f4f4f4;
+.clearfix:after {
+    centent: ""; //设置内容为空
+    // height: 0; //高度为0
+    // line-height: 0; //行高为0
+    // display: block; //将文本转为块级元素
+    // visibility: hidden; //清除浮动
+    // clear: both;
+    display: table;
+    zoom:1;//为了兼容IE
+}

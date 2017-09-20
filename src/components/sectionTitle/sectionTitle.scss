@@ -1,0 +1,46 @@
+.sectionTitle{
+  h3{
+    font-size:30px;
+    font-weight:400;
+     text-align:center;
+     line-height:50px
+  }
+  .ajk_diver{
+    margin: 10px auto;
+    margin-bottom: 40px;
+  }
+  p{
+      text-align:center;
+      font-size:16px;
+      line-height:25px;
+      color:#666
+  }
+}
+@media screen and (max-width:750px) and (min-width:480px) {
+  .sectionTitle{
+    h3{
+      font-size: 24px;
+      line-height: 40px;
+    }
+    .ajk_diver{
+      margin: 15px auto;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width:479px) {
+  .sectionTitle{
+    h3{
+      font-size: 22px;
+      line-height: 30px;
+    }
+    .ajk_diver{
+      margin: 10px auto;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+}
