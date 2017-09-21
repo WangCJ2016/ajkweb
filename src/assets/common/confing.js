@@ -14,7 +14,9 @@ const config = {
     viewCaseDetail :'op/op_viewCaseDetail',
     queryDynamicsPage :'op/op_queryDynamicsPage',
     viewDynamicDetail :'op/op_viewDynamicDetail',
-    contactUs:'op/op_contactUs'
+    contactUs:'op/op_contactUs',
+    queryKeyword: 'op/op_queryKeyword', // keywords description
+    queryLinkPage: 'op/op_queryLinkPage' // links
   }
 }
 

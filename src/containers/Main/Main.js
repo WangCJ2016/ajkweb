@@ -21,10 +21,22 @@ class MainContainer extends React.Component {
     }
   }
   componentDidMount() {
-    document.title = '首页-爱居客智慧酒店综合服务管理平台'
+    // 修改 keywords description
+    request.get(config.api.base + config.api.queryKeyword)
+      .then(res => {
+        //console.log(res)
+        if (res && res.success) {
+          const keywords = res.dataObject[0].keyword
+          const decription = res.dataObject[0].description
+          const title = res.dataObject[0].title
+          document.getElementById('keywords').content = keywords
+          document.getElementById('decription').content = decription
+          document.title = title
+        }
+      })
     request.get(config.api.base + config.api.queryDynamicsPage,{pageNo:1,pageSize:5})
     .then(res=>{
-      console.log(res)
+     // console.log(res)
       if(res.success&&res.result){
         this.setState({
           dynamicItems:res.result

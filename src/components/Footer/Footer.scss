@@ -1,6 +1,5 @@
 @import "../../assets/common/common.scss";
 .footer_large{
-  height: 338px;
   background-color: #555;
   .ajk_footer_content{
     max-width: 1020px;
@@ -70,6 +69,31 @@
   .copy{
     text-align: center;
     color: #ccc;
+  }
+  .external_links {
+    max-width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+    a { 
+      color: #ccc;
+      display: inline-block;
+      padding: 0 10px;
+      margin: 5px 0;
+      line-height: 12px;
+      &:hover {
+        text-decoration: underline;
+        color: #ec6d1b
+      }
+    }
+    a + a {
+      border-right: 1px solid #ccc;
+    }
+    a:first-child{
+      border-right: 1px solid #ccc;
+    }
+    a:last-child {
+      border-right: none
+    }
   }
 }
 .footer_medium {

@@ -1,10 +1,40 @@
 import React, { PropTypes } from 'react'
 import MediaQuery from 'react-responsive';
 import {Link} from 'react-router';
+
 import './Footer.scss';
+import config from '../../assets/common/confing.js'
+import request from '../../assets/common/request.js'
 
 class Footer extends React.Component {
+  state = {
+    links: []
+  }
+  componentDidMount() {
+    request.get(config.api.base + config.api.queryLinkPage, { pageNo:1, pageSize: 50})
+      .then(res => {
+        //console.log(res)
+        if (res && res.success) {
+          this.externalLinkRender(res.result)
+          this.setState({
+            links: res.result
+          })
+        }
+      })
+  }
+  externalLinkRender(links) {
+    //console.log(links)
+    if (links.length > 0) {
+      return links.map(link => (
+            <a key={link.id} href={link.link} target='_blank'>{link.name}</a>
+          ))
+    } else {
+      return null
+    }
+   
+  }
   render () {
+    const { links } = this.state
     return (
       <div>
       <MediaQuery minWidth={750}>
@@ -42,6 +72,9 @@ class Footer extends React.Component {
         </div>
         <div className="copy">
         &copy;&nbsp;2017爱居客&nbsp;版权所有|浙ICP备16042888号-1
+        </div>
+        <div className="external_links">
+          {this.externalLinkRender(links)}
         </div>
       </footer>
       </MediaQuery>
