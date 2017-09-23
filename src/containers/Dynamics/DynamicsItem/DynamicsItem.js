@@ -1,5 +1,6 @@
 import React, {PropTypes} from 'react'
 import {Breadcrumb} from 'antd'
+import { Link, browserHistory } from 'react-router'
 import './DynamicsItem.scss';
 import Diver from '../../../components/diver/diver';
 import MediaQuery from 'react-responsive';
@@ -39,6 +40,7 @@ class DynamicsItem extends React.Component {
   }
   render () {
     const item = this.state.item
+    //console.log(this.state.items)
     return(
       <div className='dynamics_hoteldetail clearfix'>
         <Breadcrumb separator=">">
@@ -59,7 +61,7 @@ class DynamicsItem extends React.Component {
               <LoopList>
                 {
                   this.state.items.length>0?this.state.items.map((item,index)=>(
-                    <div key={index}>{item.title}</div>
+                    <div onClick={()=>{browserHistory.push(`/dynamics/hotel/${item.id}`)}} className='loopItem' key={index}>{item.title}</div>
                   )):null
                 }
               </LoopList>

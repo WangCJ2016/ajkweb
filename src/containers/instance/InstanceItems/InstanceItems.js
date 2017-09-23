@@ -41,7 +41,7 @@ class InstanceItems extends React.Component {
             items?items.map((item,index)=>{
               return <Link to={`instance/item/${item.id}`} key={item.id} className="item">
                      <div className="img">
-                       <img src={item.picture} alt={item.title}/>
+                       <img className='instance_img' src={item.picture} alt={item.title}/>
                      </div>
                      <p>{item.title}</p>
                    </Link>

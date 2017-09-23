@@ -8,14 +8,15 @@ import './Joinus.scss'
 
 class Join extends React.Component {
   itemRender(){
-    const items = [{img:'gz',figcaption:'智能化改造'},{img:'yd',figcaption:'酒店预订'},{img:'tg',figcaption:'营运推广'},{img:'ht',figcaption:'后台管理'}]
+    const items = [{img:'gz',figcaption:'智能化改造',hash:'#gz'},{img:'yd',figcaption:'酒店预订',hash:''},{img:'tg',figcaption:'营运推广',hash:'#tg'},{img:'ht',figcaption:'后台管理',hash:'#gl'}]
     return items.map((item,index)=>{
-    return [<figure>
+    return [
+    <a href={item.hash}><figure>
         <div className="img">
           <img src={require(`../../assets/imgs/${item.img}.png`)} alt={item.figcaption}/>
         </div>
         <figcaption>{item.figcaption}</figcaption>
-      </figure>,' ']
+      </figure></a>,' ']
     })
   }
   componentDidMount() {
@@ -35,7 +36,7 @@ class Join extends React.Component {
             {this.itemRender()}
           </div>
         </section>
-        <section className="join_reform">
+        <section className="join_reform" id='gz'>
           <SectionTitle title='智能化改造' intr='专业的团队进行改造，花费时间较少，打造更好的只能生活空间！'/>
           <div className="items clearfix">
             <div className="item">
@@ -61,7 +62,7 @@ class Join extends React.Component {
             </div>
           </div>
         </section>
-        <section className="join_spread">
+        <section className="join_spread" id='tg'>
           <SectionTitle title='平台运营推广' intr='整合互联网传播资源，在微信公众号与朋友圈、各大相关平台进行联合营销推广，打造强势品牌'/>
           <div className="content clearfix">
             <MediaQuery minWidth={750}>
@@ -115,7 +116,7 @@ class Join extends React.Component {
             </figure>
           </div>
         </section>
-        <section className="join_control">
+        <section className="join_control" id='gl'>
           <SectionTitle title='酒店后台管理' intr='酒店可以通过爱居客提供的酒店系统后台，提供酒店内部管理效率和管理水平。通过分析大数据，进一步制定更完美的音效侧率'/>
           <div className="content clearfix">
           <MediaQuery minWidth={750}>

@@ -54,7 +54,7 @@ class MainContainer extends React.Component {
       const styleLi=classname({
         active:index===this.state.ajk_chara_active
       })
-     return <li key={index} className={styleLi} onClick={this.tabActive.bind(this,index)}><i className={style}></i>{item}</li>
+     return <li key={index} className={styleLi} onMouseEnter={this.tabActive.bind(this,index)} onClick={this.tabActive.bind(this,index)}><i className={style}></i>{item}</li>
     })
   }
   tabActive(key){
@@ -102,7 +102,7 @@ class MainContainer extends React.Component {
     return(
       <div>
           <Header current='shouye'/>
-          <Carousel className='Carousel_img' effect='fade'  >
+          <Carousel className='Carousel_img' effect='fade' autoplay >
               <div>
                 <div className="carousel1">
                   <div className='clearfix'>

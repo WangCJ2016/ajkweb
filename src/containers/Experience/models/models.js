@@ -12,7 +12,7 @@ class ExperienceModels extends React.Component {
     const models = ['clock','evening','book','Checkout','movie','cust','qingjing'];
    return models.map((model,index)=>{
       model = this.state.activeIndex == index?model+1:model;
-      return [<p key={index} onClick={this.selectItem.bind(this,index)}>
+      return [<p key={index} onMouseEnter={this.selectItem.bind(this,index)} onClick={this.selectItem.bind(this,index)}>
         <img src={require('../../../assets/imgs/'+model+'.png')} alt={model}/>
       </p>,' ']
     })

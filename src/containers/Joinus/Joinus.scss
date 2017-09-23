@@ -4,7 +4,7 @@
   height: 310px;
   background: url('../../assets/imgs/jm_bg.png')no-repeat center center;
   h5{
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     font-weight:300;
     text-align: center;
@@ -31,9 +31,19 @@
       display: inline-block;
       float: left;
       width: 25%;
+      &:hover {
+        img{
+          transform: rotate(360deg)
+        }
+        figcaption{
+          text-decoration: underline;
+          color: #ec6d1b
+        }
+      }
       .img{
         line-height: 100px;
         img{
+          transition: transform 0.5s;
           vertical-align: middle;
         }
       }

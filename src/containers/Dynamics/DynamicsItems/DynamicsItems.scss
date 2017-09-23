@@ -2,11 +2,17 @@
   padding: 0 30px;
   .item{
     margin-top: 60px;
+    &:hover {
+      img {
+        transform: scale(1.1)
+      }
+    }
   }
   .left{
     float: left;
     img{
       width: 100%;
+      transition: transform .5s;
     }
   }
   .right{
@@ -19,11 +25,16 @@
     p{
       margin-top: 20px;
       color: #666;
+      font-size: 14px;
       span:first-child{
         float: left;
       }
       span:last-child{
         float: right;
+        &:hover {
+          text-decoration: underline;
+          color: #ec6d1b
+        }
       }
     }
 
